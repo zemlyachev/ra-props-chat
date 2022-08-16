@@ -1,4 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/svg-with-js.min.css);
 
 *,
 *:before,
@@ -101,6 +103,11 @@ body {
   overflow-y: scroll;
   height: 575px;
 }
+
+.chat .chat-history .chat-list {
+  list-style-type: none;
+}
+
 .chat .chat-history .message-data {
   margin-bottom: 15px;
 }
@@ -175,8 +182,9 @@ body {
 
 .online,
 .offline,
-.me {
-  margin-right: 3px;
+.me,
+.typing {
+  margin-inline: 3px;
   font-size: 10px;
 }
 
@@ -190,6 +198,31 @@ body {
 
 .me {
   color: #94c2ed;
+}
+
+.typing {
+  /* margin-left: 0px; */
+  padding-left: 0rem;
+}
+
+.typing1,
+.typing2,
+.typing3 {
+  float: inline-start;
+  padding-right: 1px;
+  color: #86bb71;
+}
+
+.typing1 {
+  --fa-animation-duration: 1s;
+}
+
+.typing2 {
+  --fa-animation-duration: 1.5s;
+}
+
+.typing3 {
+  --fa-animation-duration: 2s;
 }
 
 .align-left {
